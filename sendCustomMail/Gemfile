@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+git_source(:github) {|CAD_Project_Gems| "https://github.com/CAD_Project_Gems" }
+
+# Specify your gem's dependencies in sendCustomMail.gemspec
+gemspec

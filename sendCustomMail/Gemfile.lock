@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    checkLuhnAlgorithm (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  checkLuhnAlgorithm!
+
+BUNDLED WITH
+   1.17.2
