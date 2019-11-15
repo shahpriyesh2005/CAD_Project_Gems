@@ -1,5 +1,3 @@
-require 'passwordValidator/version.rb'
-
 class PasswordComplexity
   attr_reader :password, :required_complexity
 

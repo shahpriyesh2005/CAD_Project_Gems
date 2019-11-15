@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require 'passwordValidator'
 
-class PasswordTest < Minitest::Test
+class PasswordComplexityTest < Minitest::Test
   # Test if a password complexity validator returns correct result
   def test_negative_password_complexity
 	assert_equal(true, PasswordComplexity.new("12345", 3).valid?)
