@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
 	s.name = 'luhnAlgorithmCheck'
-	s.version = '0.0.3'
+	s.version = '0.0.4'
 	s.date = '2019-11-12'
 	s.summary = "Verifies if the Credit/Debit Card is a valid card using Luhn's Algorithm"
 	s.description = "Verifies if the Credit/Debit Card is a valid card using Luhn's Algorithm. Returns True if yes, False if no"
