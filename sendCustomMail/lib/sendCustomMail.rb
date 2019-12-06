@@ -3,21 +3,15 @@ require 'userMailer'
 class SendCustomMail < UserMailer
   attr_reader :user_email, :action_type
 
-  def initialize(user_email, action_type)
+  def initialize(user_email, message)
 	@user_email = user_email
-    @action_type = action_type
+	@message = message
   end
 
   def process
-    if @action_type == "PROFILE"
-		@message = "Profile updated successfully."
+	unless @user_email.nil? && @message.nil?
+		UserMailer.new.send_email(@user_email, @message)
 	end
-	
-	if @action_type == "ORDER"
-		@message = "Order placed successfully."
-	end
-	
-	UserMailer.new.send_email(@user_email, @message)
   end
 
 end
